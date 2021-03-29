@@ -1,0 +1,10 @@
+language: python
+
+arch:
+  - amd64
+  - ppc64le
+
+script: 
+  - make clean-hook
+  - make build-serial
+  - make upgrade-tests
